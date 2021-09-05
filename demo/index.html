@@ -16,9 +16,11 @@
     import '../hello-world.js';
 
     const title = 'Hello owc World!';
+    const description = "Demo: Add a button that subtracts from the counter but won't allow going below 0.";
+    const bonus = "Bonus: Disable the subtract button when hitting 0; enable it when hitting anything other than 0.";
     render(
       html`
-        <hello-world .title=${title}>
+        <hello-world .title=${title} .description=${description} .bonus=${bonus}>
           some light-dom
         </hello-world>
       `,
